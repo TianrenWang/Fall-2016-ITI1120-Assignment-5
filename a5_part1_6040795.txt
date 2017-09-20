@@ -1,0 +1,30 @@
+1
+
+Each max function costs n operation time, and since there are four max
+functions, it would cost 4n operation time. The big O for this is O(n).
+
+2
+
+List "a" items are transferred to temp_list -> n
+temp_list is sorted -> nlogn
+For loop runs n//3 times -> n//3
+The big O for this is O(n + nlogn + n//3)
+Simplifies to O(nlogn)
+
+3
+
+List "a" items are transferred to temp_list -> n
+temp_list is sorted, costing nlogn operation time -> nlogn
+For loop runs n times -> n
+The big O for this is O(n + nlogn + n)
+Simplifies to O(nlogn)
+
+4
+
+List "a" items are transferred to temp_list -> n
+temp_list is sorted -> nlogn
+For loop runs n times -> n
+Nested while loop runs n times -> n
+The two loops together  -> n*n = n2
+The big O for this is O(n + nlogn + n2)
+Simplifies to O(n2).
